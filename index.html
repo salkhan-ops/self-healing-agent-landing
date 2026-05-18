@@ -1,142 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-  <title>Self Healing Agent</title>
-  <meta name="description" content="Static UI preview for the Self Healing Agent project." />
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-  <link rel="stylesheet" href="style.css" />
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/self-healing-agent-landing/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="dashboard">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>dashboard</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="eyebrow">Self Healing Agent</div>
-
-      <h1>Autonomous recovery interface for broken cloud workflows.</h1>
-
-      <p>
-        Static preview of the Self Healing Agent dashboard UI.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button primary" href="#dashboard">View UI Preview</a>
-        <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </section>
-
-    <section id="dashboard" class="app-shell" aria-label="Static dashboard preview">
-      <aside class="sidebar">
-        <div class="brand">
-          <div class="logo">SHA</div>
-          <div>
-            <strong>Self Healing</strong>
-            <span>Agent Console</span>
-          </div>
-        </div>
-
-        <nav class="nav">
-          <a class="active" href="#">Dashboard</a>
-          <a href="#">Incidents</a>
-          <a href="#">Agents</a>
-          <a href="#">Recovery Plans</a>
-          <a href="#">Logs</a>
-          <a href="#">Settings</a>
-        </nav>
-      </aside>
-
-      <section class="workspace">
-        <header class="topbar">
-          <div>
-            <span class="muted">Cloud Runtime</span>
-            <h2>System Health Overview</h2>
-          </div>
-
-          <div class="live-pill">
-            <span class="dot"></span>
-            Static Preview
-          </div>
-        </header>
-
-        <section class="metrics">
-          <article class="metric-card">
-            <span>Active Agents</span>
-            <strong>04</strong>
-            <small>Monitoring workflows</small>
-          </article>
-
-          <article class="metric-card">
-            <span>Recovered Jobs</span>
-            <strong>128</strong>
-            <small>Auto-recovery events</small>
-          </article>
-
-          <article class="metric-card warning">
-            <span>Open Incidents</span>
-            <strong>02</strong>
-            <small>Needs review</small>
-          </article>
-        </section>
-
-        <section class="grid">
-          <article class="panel large">
-            <div class="panel-header">
-              <h3>Incident Timeline</h3>
-              <span>Last activity</span>
-            </div>
-
-            <div class="timeline">
-              <div class="event">
-                <span class="event-dot success"></span>
-                <div>
-                  <strong>Workflow recovered</strong>
-                  <p>Failed task detected, diagnosis completed, recovery path generated.</p>
-                </div>
-              </div>
-
-              <div class="event">
-                <span class="event-dot"></span>
-                <div>
-                  <strong>Instance health checked</strong>
-                  <p>Runtime availability check completed for cloud service.</p>
-                </div>
-              </div>
-
-              <div class="event">
-                <span class="event-dot warning-dot"></span>
-                <div>
-                  <strong>Manual approval required</strong>
-                  <p>Suggested action is ready but requires user confirmation.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <h3>Agent Status</h3>
-              <span>Preview</span>
-            </div>
-
-            <div class="agent-list">
-              <div>
-                <span>Monitor Agent</span>
-                <strong>Ready</strong>
-              </div>
-              <div>
-                <span>Diagnosis Agent</span>
-                <strong>Ready</strong>
-              </div>
-              <div>
-                <span>Recovery Agent</span>
-                <strong>Waiting</strong>
-              </div>
-            </div>
-          </article>
-        </section>
-      </section>
-    </section>
-  </main>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
