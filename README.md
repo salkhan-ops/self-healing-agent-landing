@@ -30,5 +30,5 @@ git status
 git add .
 git commit -m "Initial static landing page"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/self-healing-agent-landing.git
+git remote add origin https://github.com/salkhan-ops/self-healing-agent-landing.git
 git push -u origin main
