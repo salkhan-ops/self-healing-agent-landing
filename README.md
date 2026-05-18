@@ -16,6 +16,12 @@ mkdir -p assets
 # paste the index.html block
 # paste the style.css block
 # paste the README.md block
+touch index.html style.css README.md .nojekyll
+mkdir -p assets
+
+# paste the index.html block
+# paste the style.css block
+# paste the README.md block
 
 python3 -m http.server 8000
 
